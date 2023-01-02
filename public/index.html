@@ -1,51 +1,45 @@
 <html lang="en">
   <head>
     <meta charset="utf8" />
-    <title>Form Demo</title>
+    <title>Cookin Form</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <form method="POST" action="/api/submit">
       <div class="input">
-        <label for="name">Full Name</label>
+        <label for="name">Name</label>
         <input id="name" name="name" type="text" />
       </div>
 
       <div class="input">
-        <label for="email">Email Address</label>
+        <label for="email">Email Addresse</label>
         <input id="email" name="email" type="email" />
       </div>
 
       <div class="input">
-        <label for="referers">How did you hear about us?</label>
+        <label for="referers">Bist du beim Kochen dabei?</label>
         <select id="referers" name="referers">
           <option hidden disabled selected value></option>
-          <option value="Facebook">Facebook</option>
-          <option value="Twitter">Twitter</option>
-          <option value="Google">Google</option>
-          <option value="Bing">Bing</option>
-          <option value="Friends">Friends</option>
+          <option value="Ja">Ja</option>
+          <option value="Nein">Nein</option>
         </select>
       </div>
 
       <div class="checklist">
-        <label>What are your favorite movies?</label>
+        <label>Was würdest du diese Woche gerne Kochen?</label>
         <ul>
           <li>
-            <input id="m1" type="checkbox" name="movies" value="Space Jam" />
-            <label for="m1">Space Jam</label>
+            <input id="m1" type="checkbox" name="food" value="Felix Flocken" />
+            <label for="m1">Felix Flocken</label>
           </li>
           <li>
-            <input id="m2" type="checkbox" name="movies" value="Little Rascals" />
-            <label for="m2">Little Rascals</label>
+            <input id="m2" type="checkbox" name="food" value="Weiler Wraps" />
+            <label for="m2">Weiler Wraps</label>
           </li>
           <li>
-            <input id="m3" type="checkbox" name="movies" value="Frozen" />
-            <label for="m3">Frozen</label>
-          </li>
-          <li>
-            <input id="m4" type="checkbox" name="movies" value="Home Alone" />
-            <label for="m4">Home Alone</label>
+            <input id="m3" type="checkbox" name="food" value="Kuschick Kapern" />
+            <label for="m3">Kuschick Kapern</label>
           </li>
         </ul>
       </div>
